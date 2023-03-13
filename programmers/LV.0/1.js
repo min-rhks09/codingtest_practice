@@ -4,7 +4,6 @@
 function solution(num1, num2) {
   return(num1 - num2)
 }
-solution();
 
 // 화살표 함수를 이용하여 간단하게
 const solution = (num1, num2) => num1 - num2
@@ -14,7 +13,6 @@ function solution(num1, num2) {
   let answer = num1 * num2;
   return answer;
 };
-solution();
 
 //화살표 함수 이용
 const solution = (num1, num2) => num1 * num2
@@ -38,9 +36,29 @@ function solution(num1, num2) {
   return answer;
 }
 
-solution();
-
 // 화살표 함수 이용
 const solution = (num1, num2) => num1 + num2
 
-//4.
+//4. 두 수의 나눗셈
+function solution(num1, num2) {
+  let answer = Math.floor((num1/num2)*1000);
+  
+  return answer;
+}
+
+//trunc 이용(이외에도 ~~연산자, parseInt등 활용)
+function solution(num1, num2) {
+  return Math.trunc(num1 / num2 * 1000);
+}
+
+//5.나이 출력
+const solution = (age) =>(
+  2022 - age + 1
+)
+
+
+//getFullYear 활용하기
+function solution(age) {
+    return new Date().getFullYear() - age + 1;
+}
+
